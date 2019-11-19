@@ -1,5 +1,5 @@
             
-"""Défintion des fonctions de notre module"""
+"""DÃ©fintion des fonctions de notre module"""
    
    ## Importation des packages
 
@@ -17,14 +17,14 @@ import cartopy.feature as cfeature
 
 def piechart_num(var_cat_1,var_cat_2,var_num_1,var_num_2,year_1,year_2,name):
     
-    """La fonction piechart_num permet, �   partir de 7 variables, d'afficher deux pie charts.
-    L'argument var_cat_1 correspond �   un vecteur catégorielle d'une année n d'une base de donnée
-    L'argument var_cat_2 correspond �   un vecteur catégorielle d'une année m d'une base de donnée
-    L'argument var_num_1 correspond �   un vecteur de variables quantitatives de l'année year_1 d'une base de donnée
-    L'argument var_num_2 correspond �   un vecteur de variables quantitatives de l'année year_2 d'une base de donnée
-    L'argument year_1 correspond �   une année donnée
-    L'argument year_2 correspond �   une autre année donnée, supposée supérieure �  year_1
-    L'argument name correspond au nom que l'on veut donner �   la représentation"""
+    """La fonction piechart_num permet, Ã   partir de 7 variables, d'afficher deux pie charts.
+    L'argument var_cat_1 correspond Ã   un vecteur catÃ©gorielle d'une annÃ©e n d'une base de donnÃ©e
+    L'argument var_cat_2 correspond Ã   un vecteur catÃ©gorielle d'une annÃ©e m d'une base de donnÃ©e
+    L'argument var_num_1 correspond Ã   un vecteur de variables quantitatives de l'annÃ©e year_1 d'une base de donnÃ©e
+    L'argument var_num_2 correspond Ã   un vecteur de variables quantitatives de l'annÃ©e year_2 d'une base de donnÃ©e
+    L'argument year_1 correspond Ã   une annÃ©e donnÃ©e
+    L'argument year_2 correspond Ã   une autre annÃ©e donnÃ©e, supposÃ©e supÃ©rieure Ã  year_1
+    L'argument name correspond au nom que l'on veut donner Ã   la reprÃ©sentation"""
     
     c=var_cat_1.unique()
     d=var_cat_2.unique()
@@ -56,14 +56,14 @@ def piechart_num(var_cat_1,var_cat_2,var_num_1,var_num_2,year_1,year_2,name):
     
 def piechart_string(var_cat_1,var_cat_2,var_str_1,var_str_2,year_1,year_2,name):
     
-    """La fonction piechart_string permet, �   partir de 7 variables, d'afficher deux pie charts.
-    L'argument var_cat_1 correspond �   un vecteur catégoriel d'une année n d'une base de donnée
-    L'argument var_cat_2 correspond �   un vecteur catégoriel d'une année m d'une base de donnée
-    L'argument var_str_1 correspond �   un vecteur de string de l'année year_1  d'une base de donnÃ©e
-    L'argument var_str_2 correspond �   un vecteur de string de l'année year_2 d'une base de donnÃ©e
-    L'argument year_1 correspond �   une année donnée
-    L'argument year_2 correspond �   une autre année donnée, supposée supérieure �   year_2
-    L'argument name correspond au nom que l'on veut donner �   la représentation"""
+    """La fonction piechart_string permet, Ã   partir de 7 variables, d'afficher deux pie charts.
+    L'argument var_cat_1 correspond Ã   un vecteur catÃ©goriel d'une annÃ©e n d'une base de donnÃ©e
+    L'argument var_cat_2 correspond Ã   un vecteur catÃ©goriel d'une annÃ©e m d'une base de donnÃ©e
+    L'argument var_str_1 correspond Ã   un vecteur de string de l'annÃ©e year_1  d'une base de donnÃƒÂ©e
+    L'argument var_str_2 correspond Ã   un vecteur de string de l'annÃ©e year_2 d'une base de donnÃƒÂ©e
+    L'argument year_1 correspond Ã   une annÃ©e donnÃ©e
+    L'argument year_2 correspond Ã   une autre annÃ©e donnÃ©e, supposÃ©e supÃ©rieure Ã   year_2
+    L'argument name correspond au nom que l'on veut donner Ã   la reprÃ©sentation"""
     
     c=var_cat_1.unique()
     d=var_cat_2.unique()
@@ -102,14 +102,14 @@ def piechart_string(var_cat_1,var_cat_2,var_str_1,var_str_2,year_1,year_2,name):
 
 def plot_geo_time_value(data,lim_metropole,variable_of_interest,coordinates,titles,nb_of_periods,title='Titre',plots_per_row=2,plots_per_column=2, scale = 1/3):
     
-    """ data : vecteur des dataframes indexés de telle sorte que le datframe le plus récent soit en position 0 variable_of_interest : vecteur qui regroupe les colonnes contenant les valeurs �  représenter et indexé de telle sorte �  correspondre aux datframes contenus dans le vecteur data, 
-    coordinates : vecteur de vecteurs de coordonnées et même logique d'indexation
-    nb_of_periods : le nombre de cartes que l'on veut représenter
+    """ data : vecteur des dataframes indexÃ©s de telle sorte que le datframe le plus rÃ©cent soit en position 0 variable_of_interest : vecteur qui regroupe les colonnes contenant les valeurs Ã  reprÃ©senter et indexÃ© de telle sorte Ã  correspondre aux datframes contenus dans le vecteur data, 
+    coordinates : vecteur de vecteurs de coordonnÃ©es et mÃªme logique d'indexation
+    nb_of_periods : le nombre de cartes que l'on veut reprÃ©senter
     title : le titre que l'on veut donner aux cartes
-    titles : vecteurs de titres �  donner individuellement aux cartes
+    titles : vecteurs de titres Ã  donner individuellement aux cartes
     plots_per_row : nb de cartes par ligne
     plots_per_columns : nb de cartes par colonne
-    scale : scalaire qui représente la grandeur désirée des cercles"""
+    scale : scalaire qui reprÃ©sente la grandeur dÃ©sirÃ©e des cercles"""
     
     
     fig = plt.figure(figsize=(15,10)) 
@@ -133,17 +133,17 @@ def plot_geo_time_value(data,lim_metropole,variable_of_interest,coordinates,titl
     fig.show()
 
 
-    ## La fonction barplot permet de réaliser un histogramme avec des variables catégorielles
+    ## La fonction barplot permet de rÃ©aliser un histogramme avec des variables catÃ©gorielles
     
     """ 
     var_t0 = nom de la variable de la colonne provenant du dataframe de la valeur pour l'annee t
     var_t1 = nom de la variable de la colonne provenant du dataframe de la valeur pour l'annee t+1
-    pivot_t1 = nom de la variable de la colonne provenant du dataframe df19 des catégories représentées en abscisse
-    pivot_t0 = nom de la variable de la colonne provenant du dataframe df18 des catégories représentées en abscisse  
+    pivot_t1 = nom de la variable de la colonne provenant du dataframe df19 des catÃ©gories reprÃ©sentÃ©es en abscisse
+    pivot_t0 = nom de la variable de la colonne provenant du dataframe df18 des catÃ©gories reprÃ©sentÃ©es en abscisse  
     absc = titre de l'axe des abcsisses
-    ordo = titre de l'axe des ordonnées
+    ordo = titre de l'axe des ordonnÃ©es
     title = titre du graphique
-    nb_of_categories = nombre de catégories du barplot
+    nb_of_categories = nombre de catÃ©gories du barplot
     df19 = nom du dataframe de l'annee t+1
     df18 = nom du dataframe de l'annee t
     
